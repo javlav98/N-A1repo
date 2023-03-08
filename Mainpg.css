@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=DM+Sans&family=Gloria+Hallelujah&family=Orbitron&family=Play&family=Press+Start+2P&family=Righteous&family=Space+Mono&display=swap');
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 body {
     background-color: white;
@@ -10,4 +11,32 @@ body {
     padding: 200px 0;
     font-family: 'Orbitron', sans-serif;
     font-size: 50px;
+}
+
+/* Playbutton */
+
+/* Now Playing */
+.container{
+    background:#ffffff;
+    position: absolute;
+    left: 135px;
+    bottom: 20px;
+    color:rgb(0, 0, 0);
+    height: 30px;
+}
+
+.container strong{
+    float: left;
+    margin-right:15px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: x-large;
+}
+
+.container marquee{
+    position: absolute;
+    float: right;
+    width: 1150px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: x-large;
+
 }
