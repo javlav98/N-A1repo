@@ -39,19 +39,30 @@
 
 <div id ="txt" class="Clock"></div>
 
-<div class="container"><strong>On air</strong> <marquee direction="right" class="radioplayer"
+<div class="playbutton"
+	data-src="http://streaming.radio.co/sced7c0e79/listen"
+	data-playbutton="true"
+	data-volumeslider="false"
+	data-elapsedtime="false"
+	data-nowplaying="false"
+	data-showplayer="false"
+	data-volume="40">
+</div>
+
+
+<div class="container"><strong>Playing</strong> <marquee onmouseover="this.stop();" onmouseout="this.start();" class="radioplayer" scrollamount="15"
 	data-src="http://streaming.radio.co/sced7c0e79/listen"
 	data-playbutton="false"
 	data-volumeslider="false"
 	data-elapsedtime="false"
 	data-nowplaying="true"
-	data-showplayer="false">&nbsp On The Mod Radio</marquee>
+	data-showplayer="false">&nbsp-The Mod Radio &nbsp-&nbsp On-Air 24/7</marquee>
 </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
+<script>$('.playbutton').radiocoPlayer();</script>
 <script>$('.radioplayer').radiocoPlayer();</script>
-
 
 </html>

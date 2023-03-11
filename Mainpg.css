@@ -14,13 +14,46 @@ body {
 }
 
 /* Playbutton */
+.radioco-playButton-playing:before{
+    font-family: 'FontAwesome', sans-serif;
+  content: "\f04b";
+}
+
+.radioco-playButton-paused:before{
+    font-family: 'FontAwesome', sans-serif;
+  content:"\f04c";
+}
+
+.radioco-playButton{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 42px;
+  left: 12px;
+  font-size:30px;
+}
+
+.radioco-playButton:active{
+  color:#000000;
+}
+
+.radioco-playButton-playing{
+  font-family: "controls";
+  position: absolute;
+  text-size:150%;
+}
+
+.radioco-playButton-paused{
+  font-family: "controls";
+  position: absolute;
+  text-size:150%;
+}
 
 /* Now Playing */
 .container{
     background:#ffffff;
     position: absolute;
-    left: 135px;
-    bottom: 20px;
+    left: 40px;
+    bottom: 16px;
     color:rgb(0, 0, 0);
     height: 30px;
 }
@@ -29,14 +62,19 @@ body {
     float: left;
     margin-right:15px;
     font-family: 'Orbitron', sans-serif;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .container marquee{
     position: absolute;
     float: right;
-    width: 1150px;
+    width: 1500px;
     font-family: 'Orbitron', sans-serif;
-    font-size: x-large;
+    font-size: xx-large;
 
+}
+
+button {
+    position: absolute;
+    right: 20px;
 }
